@@ -1,0 +1,29 @@
+{
+  "name": "odin-node-basic",
+  "version": "1.0.0",
+  "description": "The Odin Project Node Basic Informational Site",
+  "keywords": [
+    "odin",
+    "node"
+  ],
+  "homepage": "https://github.com/Michanoku/odin-node-basic#readme",
+  "bugs": {
+    "url": "https://github.com/Michanoku/odin-node-basic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michanoku/odin-node-basic.git"
+  },
+  "license": "ISC",
+  "author": "Michanoku",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
+  }
+}
