@@ -1,15 +1,16 @@
+const path = require('path');
 const express = require("express");
 const morgan = require("morgan");
-const routes = require("/routes");
+const routes = require("./routes");
 
 const app = express();
-app.set("view engine", "ejs");
 app.use(morgan('dev'));
+app.use(express.static('public'));
 
 app.listen(8080, '0.0.0.0')
 
 app.use(routes);
 
 app.use((req, res) => {
-  res.status(404).render('404', { title: '404'});
+  res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });

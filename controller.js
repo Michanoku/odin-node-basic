@@ -1,13 +1,15 @@
+const path = require('path');
+
 const index = (req, res) => {
-  res.render('index', { title: 'Index'});
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
 }
 
 const about = (req, res) => {
-  res.render('about', { title: 'About'});
+  res.sendFile(path.join(__dirname, 'views', 'about.html'));
 }
 
 const contact = (req, res) => {
-  res.render('contact', { title: 'Contact Me'});
+  res.sendFile(path.join(__dirname, 'views', 'contact.html'));
 }
 
 module.exports = {
