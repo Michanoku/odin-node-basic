@@ -15,6 +15,10 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
+if (process.env.NODE_ENV === "prod") {
+    // do production-specific stuff
+}
+
 app.use(routes);
 
 app.use((req, res) => {
